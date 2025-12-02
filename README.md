@@ -47,10 +47,21 @@ The multi-fidelity analysis successfully validated the wing's performance agains
 
 **1. RANS CFD Velocity Field**
 *Visualization of flow acceleration over the suction surface and stagnation point at the leading edge.*
-[Ansys Velocity Contour](Velocity_Contour.png)
+[Velocity Contour](<CFD Results/Velocity Contour.png>)
 
-**2. Automated Lift Curve Sweep**
-[Python Lift Plot](CFD Results/NACA 4412 Lift Curve.png)
+**2. RANS CFD Pressure Field**
+*Visualization of pressure distribution over the suction surface and stagnation point at the leading edge.*
+[Pressure Contour](<CFD Results/Pressure Distribution.png>)
+
+**3. WingTip Vortex Visualisation**
+*Visualization of vortex generated at the wingtip (distribution of particles) [*]
+[WingTip Vortex](<CFD Results/Vortex Visualizer.png>)
+
+**4.1. Automated Lift Curve Sweep**
+![NACA 4412 Lift Curve](<CFD Results/NACA 4412 Lift Curve.png>)
+
+**4.2. Automated Lift Curve Sweep with flaps**
+[Lift Curve of Wing with Flaps / Elevators](<CFD Results/Lift with Flaps.png>)
 
 
 ---
@@ -58,7 +69,7 @@ The multi-fidelity analysis successfully validated the wing's performance agains
 ## 📂 Repository Structure
 
 ```text
-├── 📂 cad and cfd files ()
+├── 📂 cad and cfd files 
 │   ├── STOL_Wing.stp          # Final Clean-Sheet Wing Geometry (STEP)
 │   └── STOL_Wing.vsp3         # OpenVSP parametric model
 ├── 📂 scripts

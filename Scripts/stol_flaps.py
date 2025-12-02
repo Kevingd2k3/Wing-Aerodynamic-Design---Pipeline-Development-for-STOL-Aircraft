@@ -24,7 +24,7 @@ def rotate_airfoil(x, y, angle_deg, hinge_x=0.7):
     return x_new, y_new
 
 def run_flap_sweep():
-    print("--- Starting High-Lift Flap Simulation ---")
+    print("Starting High-Lift Flap Simulation")
     
     # 1. Setup
     base_airfoil = asb.Airfoil("naca4412")
@@ -36,7 +36,7 @@ def run_flap_sweep():
     
     # 2. The Loop (Iterate through each flap setting)
     for i, angle in enumerate(flap_angles):
-        print(f"--> Testing Flap Deflection: {angle} degrees...")
+        print(f"Testing Flap Deflection: {angle} degrees")
         
         # A. Create the Flapped Geometry
         # We get the coordinates, rotate the tail, and make a new Airfoil object
@@ -73,7 +73,7 @@ def run_flap_sweep():
     # 3. Finalize Plot
     plt.title("STOL Performance: Lift Increase due to Flaps", fontsize=14)
     plt.xlabel("Angle of Attack (deg)", fontsize=12)
-    plt.ylabel("Lift Coefficient ($C_L$)", fontsize=12)
+    plt.ylabel("Lift Coefficient (C_L)", fontsize=12)
     plt.grid(True)
     plt.legend(fontsize=12)
     plt.axhline(y=2.0, color='k', linestyle='--', alpha=0.5, label='STOL Target (CL=2.0)')

@@ -3,13 +3,13 @@ import aerosandbox.numpy as np
 import matplotlib.pyplot as plt
 
 def run_pipeline_test():
-    print("--- 1. Initializing STOL Pipeline ---")
+    print("1. Initializing STOL Pipeline")
     
     # Define the Airfoil (NACA 4412 is a classic high-lift STOL foil)
     # We use n_points_per_side=200 to ensure XFOIL has enough resolution
     airfoil = asb.Airfoil("naca4412").repanel(n_points_per_side=200)
     
-    print("--- 2. Sending Geometry to XFOIL ---")
+    print("2. Sending Geometry to XFOIL")
     
     # This is the "Wrapper" part. 
     # We tell Python to start XFOIL, feed it the airfoil, and get the data.
@@ -23,10 +23,10 @@ def run_pipeline_test():
         )
         
         # Run a sweep from -5 to 15 degrees
-        print("    Running Alpha Sweep (-5 to 15 deg)...")
+        print("Running Alpha Sweep (-5 to 15 deg)...")
         results = xf_analysis.alpha(np.linspace(-5, 15, 21))
         
-        print("--- 3. Success! Data Retrieved ---")
+        print("3. Success! Data Retrieved")
         print(f"    Max Lift (Cl_max): {np.max(results['CL']):.3f}")
         
         # Plotting
