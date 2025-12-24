@@ -79,3 +79,7 @@ The multi-fidelity analysis successfully validated the wing's performance agains
 │   ├── Velocity_Contour.png   # High-Res CFD visualization
 │   └── Lift_Drag_Report.txt   # Raw Fluent output data
 └── README.md
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
