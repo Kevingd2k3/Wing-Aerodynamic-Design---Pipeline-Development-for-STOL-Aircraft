@@ -1,18 +1,18 @@
-# High-Lift STOL Aerodynamics Pipeline ✈️
+# High-Lift STOL Aerodynamics Pipeline 
 
 ![Python](https://img.shields.io/badge/Code-Python_3.11-blue?logo=python&logoColor=white)
 ![CFD](https://img.shields.io/badge/Validation-Ansys_Fluent-orange?logo=ansys&logoColor=white)
 ![CAD](https://img.shields.io/badge/Design-OpenVSP-green)
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 
-## 📖 Project Overview
+## Project Overview
 This project establishes a **multi-fidelity aerodynamic analysis pipeline** designed to optimize a high-lift wing for regional Short Take-Off and Landing (STOL) aircraft. 
 
 Moving beyond manual iteration, this workflow integrates **Python-based automation** for rapid design space exploration with **Industrial CFD** for physics validation. The goal was to design a clean-sheet wing capable of high-efficiency cruise ($L/D > 15$) while maintaining the high $C_{L_{max}}$ required for short-field operations.
 
 ---
 
-## 🛠️ The Engineering Pipeline
+## The Engineering Pipeline
 The project follows a "Crawl, Walk, Run" engineering methodology:
 
 ### Phase 1: Automated Low-Fidelity Design (Python & XFOIL)
@@ -32,7 +32,7 @@ The project follows a "Crawl, Walk, Run" engineering methodology:
 
 ---
 
-## 📊 Key Results
+## Key Results
 
 The multi-fidelity analysis successfully validated the wing's performance against regional transport targets.
 
@@ -80,6 +80,6 @@ The multi-fidelity analysis successfully validated the wing's performance agains
 │   └── Lift_Drag_Report.txt   # Raw Fluent output data
 └── README.md
 
-## 📄 License
+ ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
